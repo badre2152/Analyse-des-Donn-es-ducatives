@@ -76,7 +76,7 @@ Synthèse des matières à fort taux d'échec, charge de travail des enseignants
 - **Jira** pour le suivi du projet
 
 ## 👤 Auteur
-Noah — Data Analyst / Data Engineer junior, bootcamp CCFBS (depuis janvier 2025)
+Brahim — Data Analyst / Data Engineer junior, bootcamp CCFBS (depuis janvier 2025)
 
 ## 📅 Deadline
 Assigné le 22/06/2026 — Deadline le 26/06/2026
