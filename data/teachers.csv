@@ -1,0 +1,21 @@
+teacher_id,full_name,hire_date,subject,department,class_level_assigned,contract_type,weekly_hours,city,performance_rating
+TCH001,Hind Benali,22/09/2011,Mathématiques,Sciences,Terminale,Contractuel,24,Rabat,2.7
+TCH002,Asmaa Filali,29/03/1999,Français,Lettres,2nde,Titulaire,24,Tanger,4.0
+TCH003,Nabil Mansouri,20/02/2021,Histoire-Géographie,Sciences Humaines,5ème,Titulaire,23,Agadir,3.8
+TCH004,Meryem Chraibi,25/09/2009,SVT,Sciences,6ème,Contractuel,28,Agadir,3.8
+TCH005,Karim El Idrissi,10/08/2004,Physique-Chimie,Sciences,4ème,Titulaire,27,Beni Mellal,5.0
+TCH006,Karim Akram,08/02/2010,Anglais,Langues,1ère,Titulaire,16,Oujda,2.0
+TCH007,Zakaria Fassi,06/06/2013,Philosophie,Lettres,Terminale,Vacataire,19,Marrakech,3.6
+TCH008,Nabil Zerhouni,18/11/2008,Informatique,Sciences,3ème,Vacataire,27,Agadir,2.2
+TCH009,Nour Akram,23/07/2017,Arts Plastiques,Arts & Sport,4ème,Titulaire,17,Oujda,4.3
+TCH010,Soukaina Moussaoui,16/11/2019,EPS,Arts & Sport,4ème,Vacataire,28,Beni Mellal,2.5
+TCH011,Tariq Benali,16/08/2014,Mathématiques,Sciences,3ème,Titulaire,19,Meknès,4.6
+TCH012,Rim El Idrissi,29/07/2005,Français,Lettres,Terminale,Contractuel,14,Fès,1.6
+TCH013,Saad Bennani,19/09/1996,Histoire-Géographie,Sciences Humaines,3ème,Titulaire,27,Rabat,2.0
+TCH014,Ilyas Mansouri,25/06/2006,SVT,Sciences,6ème,Contractuel,16,Marrakech,4.0
+TCH015,Sanaa El Idrissi,19/06/2000,Physique-Chimie,Sciences,Terminale,Vacataire,25,Kénitra,3.7
+TCH016,Amine Tahiri,12/02/2018,Anglais,Langues,2nde,Vacataire,16,Fès,1.5
+TCH017,Zakaria Oulad,25/06/2018,Philosophie,Lettres,2nde,Titulaire,14,Meknès,3.4
+TCH018,Soukaina El Idrissi,14/12/1996,Informatique,Sciences,4ème,Titulaire,23,Rabat,1.6
+TCH019,Ghita Rahali,25/12/2000,Arts Plastiques,Arts & Sport,1ère,Vacataire,29,Oujda,3.7
+TCH020,Omar Benali,18/01/2001,EPS,Arts & Sport,Terminale,Titulaire,26,Casablanca,

@@ -1,0 +1,26 @@
+# Power BI
+*.pbix.bak
+~$*.pbix
+*.pbit.bak
+
+# Office temp files
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Auto recovery / backups
+*AutoRecover*
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Editor / IDE
+.vscode/
+.idea/
