@@ -1,6 +1,6 @@
 # 📊 Analyse des Données Éducatives avec Power BI
 
-Projet de Data Analytics réalisé dans le cadre du bootcamp **Data Analyst — CCFBS / [INT-Maroc] DATA Analyst**.
+Projet de Data Analytics réalisé dans le cadre du bootcamp **Data Analyst, CCFBS / [INT-Maroc] DATA Analyst**.
 
 L'objectif est d'exploiter un jeu de données réel issu d'un établissement scolaire fictif (élèves, enseignants, cours) afin de **nettoyer, modéliser, transformer et visualiser** les données dans un tableau de bord Power BI complet et interactif, destiné à appuyer les décisions stratégiques de la direction.
 
@@ -76,7 +76,7 @@ Synthèse des matières à fort taux d'échec, charge de travail des enseignants
 - **Jira** pour le suivi du projet
 
 ## 👤 Auteur
-Brahim — Data Analyst / Data Engineer junior, bootcamp CCFBS (depuis janvier 2025)
+Brahim, Data Analyst / Data Engineer junior, bootcamp CCFBS de janvier à août 2026
 
 ## 📅 Deadline
-Assigné le 22/06/2026 — Deadline le 26/06/2026
+Assigné le 22/06/2026, deadline le 26/06/2026
