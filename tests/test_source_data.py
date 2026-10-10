@@ -39,6 +39,28 @@ class SourceDataContracts(unittest.TestCase):
         for student in read_csv("students.csv"):
             self.assertIn(student["teacher_id"], teachers)
 
+    def test_course_hours_are_valid_when_recorded(self):
+        for course in read_csv("courses.csv"):
+            scheduled = float(course["scheduled_hours"])
+            self.assertGreater(scheduled, 0, course["course_id"])
+            completed_text = course["completed_hours"].strip()
+            if completed_text:
+                completed = float(completed_text)
+                self.assertGreaterEqual(completed, 0, course["course_id"])
+                self.assertLessEqual(completed, scheduled, course["course_id"])
+
+    def test_missing_course_fields_are_explicit(self):
+        missing_grades = 0
+        missing_hours = 0
+        for course in read_csv("courses.csv"):
+            if not course["grade"].strip():
+                missing_grades += 1
+                self.assertFalse(course["pass_fail"].strip(), course["course_id"])
+            if not course["completed_hours"].strip():
+                missing_hours += 1
+        self.assertEqual(missing_grades, 32)
+        self.assertEqual(missing_hours, 22)
+
     def test_grade_result_consistency(self):
         incomplete = 0
         for course in read_csv("courses.csv"):
