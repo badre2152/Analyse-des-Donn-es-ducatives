@@ -2,7 +2,7 @@
 
 Projet de Data Analytics réalisé dans le cadre du bootcamp **Data Analyst — CCFBS / [INT-Maroc] DATA Analyst**.
 
-L'objectif est d'exploiter un jeu de données réel issu d'un établissement scolaire fictif (élèves, enseignants, cours) afin de **nettoyer, modéliser, transformer et visualiser** les données dans un tableau de bord Power BI complet et interactif, destiné à appuyer les décisions stratégiques de la direction.
+L'objectif est d'exploiter un jeu de données d'exemple décrivant un établissement scolaire fictif (élèves, enseignants, cours) afin de **nettoyer, modéliser, transformer et visualiser** les données dans un tableau de bord Power BI complet et interactif, destiné à appuyer les décisions stratégiques de la direction.
 
 ---
 
@@ -80,3 +80,18 @@ Brahim — Data Analyst / Data Engineer junior, bootcamp CCFBS (depuis janvier 2
 
 ## 📅 Deadline
 Assigné le 22/06/2026 — Deadline le 26/06/2026
+
+## Qualité des données sources
+
+Les trois fichiers CSV contiennent 124 élèves, 20 enseignants et 500 lignes de cours.
+Les clés et les références croisées sont vérifiées par `tests/test_source_data.py`.
+Certaines notes et certains résultats de cours sont absents : **32 cours sur 500**.
+Ces lignes ne doivent pas être automatiquement comptées comme des échecs lors du calcul du taux de réussite. Le dénominateur d'un taux de réussite fondé sur `pass_fail` doit être limité aux cours dont le résultat est connu.
+
+Pour contrôler les fichiers sources :
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Ce contrôle porte sur les CSV, pas sur la justesse d'exécution du fichier Power BI `.pbix`, qui reste à vérifier dans Power BI Desktop.
