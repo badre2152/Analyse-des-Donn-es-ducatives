@@ -28,7 +28,7 @@ L'objectif est d'exploiter un jeu de données d'exemple décrivant un établisse
 
 | Fichier | Description | Colonnes clés |
 |---|---|---|
-| `students.csv` | 124 élèves | `student_id`, `class_level`, `section`, `status`, `average_grade`, `absences_count`, `teacher_id` |
+| `students.csv` | 120 élèves | `student_id`, `class_level`, `section`, `status`, `average_grade`, `absences_count`, `teacher_id` |
 | `teachers.csv` | 20 enseignants | `teacher_id`, `subject`, `contract_type`, `weekly_hours`, `performance_rating` |
 | `courses.csv` | 500 cours | `course_id`, `teacher_id`, `student_id`, `semester`, `year`, `grade`, `pass_fail` |
 
@@ -83,7 +83,7 @@ Assigné le 22/06/2026 — Deadline le 26/06/2026
 
 ## Qualité des données sources
 
-Les trois fichiers CSV contiennent 124 élèves, 20 enseignants et 500 lignes de cours.
+Les trois fichiers CSV contiennent 120 élèves uniques, 20 enseignants et 500 lignes de cours. Quatre lignes strictement identiques ont été retirées de `students.csv` après contrôle des identifiants, sans supprimer d'élèves distincts.
 Les clés et les références croisées sont vérifiées par `tests/test_source_data.py`.
 Certaines notes et certains résultats de cours sont absents : **32 cours sur 500**.
 Ces lignes ne doivent pas être automatiquement comptées comme des échecs lors du calcul du taux de réussite. Le dénominateur d'un taux de réussite fondé sur `pass_fail` doit être limité aux cours dont le résultat est connu.
