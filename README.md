@@ -16,8 +16,6 @@ L'objectif est d'exploiter un jeu de données d'exemple décrivant un établisse
 │   └── courses.csv       # Détail des cours et résultats
 ├── powerbi/
 │   └── dashboard.pbix    # Fichier Power BI (modèle + rapport)
-├── docs/
-│   └── presentation.pptx # Présentation PowerPoint (3-4 slides)
 ├── .gitignore
 └── README.md
 ```
@@ -84,8 +82,8 @@ Assigné le 22/06/2026 — Deadline le 26/06/2026
 ## Qualité des données sources
 
 Les trois fichiers CSV contiennent 120 élèves uniques, 20 enseignants et 500 lignes de cours. Quatre lignes strictement identiques ont été retirées de `students.csv` après contrôle des identifiants, sans supprimer d'élèves distincts.
-Les clés et les références croisées sont vérifiées par `tests/test_source_data.py`.
-Certaines notes et certains résultats de cours sont absents : **32 cours sur 500**.
+Les clés, les références croisées et les bornes des heures planifiées/réalisées sont vérifiées par `tests/test_source_data.py`.
+Certaines notes et certains résultats de cours sont absents : **32 cours sur 500**. De plus, **22 cours sur 500** n'ont pas de valeur `completed_hours`. Le taux de réalisation doit ignorer ces valeurs manquantes plutôt que les interpréter comme zéro.
 Ces lignes ne doivent pas être automatiquement comptées comme des échecs lors du calcul du taux de réussite. Le dénominateur d'un taux de réussite fondé sur `pass_fail` doit être limité aux cours dont le résultat est connu.
 
 Pour contrôler les fichiers sources :
